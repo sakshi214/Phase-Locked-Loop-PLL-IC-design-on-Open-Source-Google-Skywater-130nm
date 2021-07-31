@@ -23,4 +23,15 @@
 
 ### Introduction to Charge Pump
 - It converts the digital comparision from PFD into anolog signal.
-- 
+- On incresing the voltage, the speed of the oscillator increases.
+- The main issue of charge pump is charge leakage.
+- charge leakage-> it keeps charging the capacitor even when inputs are off.
+- This is tackled by using low pass filter in the output, which also helps inj stabilizing the PLL.
+
+### Introduction to VCO and frequency divider
+- VCO is the onchip oscillator.
+- The frequency depends on delay and delay depends on current supplied.
+- Frequency divider is used to convert the whole system into frequency multiplier.
+Lock Range ->the range of frequencies for which PLL can maintain lock.
+Capture range -> The frequencies for which PLL is able to lock-in from unlocked state.
+
