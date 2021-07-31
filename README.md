@@ -32,6 +32,17 @@
 - VCO is the onchip oscillator.
 - The frequency depends on delay and delay depends on current supplied.
 - Frequency divider is used to convert the whole system into frequency multiplier.
-Lock Range ->the range of frequencies for which PLL can maintain lock.
+Lock Range ->the range of frequencies for which PLL can maintain lock, already in locked state.
 Capture range -> The frequencies for which PLL is able to lock-in from unlocked state.
 
+### Tool setup and Design flow
+Two tools are used:
+- Ngspice: it is used for the transistor level circuit simulations.
+- Magic: it is used for the layout design.
+
+Development flow steps:
+- SPICE level circuit development
+- Pre layout simulation
+- Layout development
+- Parasitics extraction
+- Post layout simulation
