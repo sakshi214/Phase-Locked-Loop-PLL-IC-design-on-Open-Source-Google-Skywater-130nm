@@ -115,8 +115,37 @@ To start the simulation of the circuit just created
 ### Layout Design
 - The command "magic -T sky130A.tech" is used to open the magic window.
 - On the right hand side there is tray of materials present.
+- green section represents nmos.
 
 ![image](https://user-images.githubusercontent.com/69634738/127771476-26c13391-41e1-412a-964e-be3ce29305db.png)
+
+### Layout walkthrough
+- The following is the frequency divider layout circuit
+- The components are kept close together to fit in minimum area, hence layout looks complicated.
+![image](https://user-images.githubusercontent.com/69634738/127772509-7b2ff90b-5ea2-4179-8923-ff01dcfd09ac.png)
+
+- The below is the layout of PFD circuit.
+- in this design additional buffers are used to get full swing.
+![image](https://user-images.githubusercontent.com/69634738/127772625-87a1cc52-a094-4345-81ad-5f5ee8a18811.png)
+
+- The below is the charge pump layout:
+![image](https://user-images.githubusercontent.com/69634738/127773445-6c92d832-acfc-4369-b091-4c142a329215.png)
+- The below is the vco layout:
+![image](https://user-images.githubusercontent.com/69634738/127773616-b958369d-415b-4e6d-9e02-acc23ad75db1.png)
+
+### Parasitics Extraction
+- To extract the capacitance effect information parasitics extraction.
+![image](https://user-images.githubusercontent.com/69634738/127773909-7310cf74-bf65-40cb-b124-a87d1742e208.png)
+- press i button to select the whole design and then after giving command extract all
+![image](https://user-images.githubusercontent.com/69634738/127774082-4dea9498-df03-4e97-97dd-0d9584a31df7.png)
+- this converts the connectivity information to .ext file
+- "cthresh 0 and rthresh 0 " this setting is given to tell the magic to extract any amount of capacitive or resistive effect.
+![image](https://user-images.githubusercontent.com/69634738/127774245-e1f15bc2-7bc5-4afb-be4f-93fa8f7ef3f2.png)
+- The generated spice file is in subckt format
+![image](https://user-images.githubusercontent.com/69634738/127774349-0bd9bb7b-e64e-45e2-be17-e28d67003ee5.png)
+
+
+
 
 
 
