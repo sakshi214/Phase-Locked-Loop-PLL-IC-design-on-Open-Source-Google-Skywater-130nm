@@ -1,4 +1,5 @@
 # Phase-Locked-Loop-PLL-IC-design-on-Open-Source-Google-Skywater-130nm
+![image](https://user-images.githubusercontent.com/69634738/127781329-0933bb06-2b36-4af5-9943-86e433a4b466.png)
 
 # DAY-1
 ## Introduction to PLL
@@ -47,8 +48,6 @@ Development flow steps:
 - Parasitics extraction
 - Post layout simulation
 
-
-
 # DAY 2
 ## PLL Components circuit design
 To make circuit description in ngspice:
@@ -58,7 +57,6 @@ To make circuit description in ngspice:
 - The frequency divider circuit file is shown below
 - this is the circuit diagram
 ![image](https://user-images.githubusercontent.com/69634738/127761397-3e5667d2-32b5-4ead-8a0c-88bde7d56a99.png)
-
 -the sky130 library is included with 'include' command.
 - xm1 is the pmos and the numbers 3 2 1 1 represents drain gate source body respectively.
 - pmos length is 150 and width is 720 taken
@@ -145,7 +143,6 @@ To start the simulation of the circuit just created
 - in the bottom there are additional capacitances, these are the capacitances extracted by magic.
 ![image](https://user-images.githubusercontent.com/69634738/127774981-9c42ed3d-5507-429c-bb37-f3afdf7bf12d.png)
 
-
 ### Post Layout simulation
 - sky130 and PFD spice file is included
 ![image](https://user-images.githubusercontent.com/69634738/127781018-72d79ac4-a416-445a-9a3b-261162a6f9fc.png)
@@ -155,7 +152,6 @@ To start the simulation of the circuit just created
 - they are combined using "place instance" option of magic.
 ![image](https://user-images.githubusercontent.com/69634738/127780349-290525db-8652-4418-801c-ffbe058626f5.png)
 
-
 ### Tapeout
 - It means to send our final designs to FAB.
 - The design needs some kind of interface to the external world.
@@ -163,7 +159,8 @@ To start the simulation of the circuit just created
 - it carries the design which is then fabricated and carried to outside world.
 
 ## Acknowledgement
-- 
+- Kunal Ghosh (Co-founder) (VSD Corp Pvt Ltd)
+- Lakshmi Sathi (Instructor)
 
 
 
