@@ -142,7 +142,12 @@ To start the simulation of the circuit just created
 - "cthresh 0 and rthresh 0 " this setting is given to tell the magic to extract any amount of capacitive or resistive effect.
 ![image](https://user-images.githubusercontent.com/69634738/127774245-e1f15bc2-7bc5-4afb-be4f-93fa8f7ef3f2.png)
 - The generated spice file is in subckt format
-![image](https://user-images.githubusercontent.com/69634738/127774349-0bd9bb7b-e64e-45e2-be17-e28d67003ee5.png)
+- in the bottom there are additional capacitances, these are the capacitances extracted by magic.
+![image](https://user-images.githubusercontent.com/69634738/127774981-9c42ed3d-5507-429c-bb37-f3afdf7bf12d.png)
+
+
+### Post Layout simulations
+- 
 
 
 
