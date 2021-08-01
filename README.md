@@ -54,7 +54,7 @@ Development flow steps:
 To make circuit description in ngspice:
 - first git clone the repository
 ![image](https://user-images.githubusercontent.com/69634738/127761238-60b60e01-c691-45be-a74a-e31f282585af.png)
-- A spice file is the one with .spice or .clr extension
+- A spice file is the one with .spice or .cir extension
 - The frequency divider circuit file is shown below
 - this is the circuit diagram
 ![image](https://user-images.githubusercontent.com/69634738/127761397-3e5667d2-32b5-4ead-8a0c-88bde7d56a99.png)
@@ -69,6 +69,24 @@ To make circuit description in ngspice:
 - v2 is the pulse source i.e, the clock signal.
 - .control block is used to keep the simulation instructions.
 ![image](https://user-images.githubusercontent.com/69634738/127761459-9333ea10-7d04-4d6c-a9bb-b8e6a63ed5ac.png)
+
+## PLL components circuit simulations
+To start the simulation of the circuit just created
+- The transient analysis block is shown
+- the output is having half the frequency of input
+![image](https://user-images.githubusercontent.com/69634738/127763361-21eb22ed-319a-4681-aab8-b9cfd39c2ced.png)
+
+- This is the charge pump CP.cir file 
+![image](https://user-images.githubusercontent.com/69634738/127763619-8f1134f6-740c-4cd4-9f8e-07ab1bec0a8d.png)
+- on simulating this we get the below waveform.
+- the current leakage is very small for charge pump
+- the slope represents the charging happening
+![image](https://user-images.githubusercontent.com/69634738/127763770-10483a9c-c32c-49c2-af0a-6f15ebb8ffc8.png)
+
+- the response when actual pulse signal give is 
+
+
+
 
 
 
