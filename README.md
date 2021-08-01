@@ -1,6 +1,28 @@
 # Phase-Locked-Loop-PLL-IC-design-on-Open-Source-Google-Skywater-130nm
 ![image](https://user-images.githubusercontent.com/69634738/127781329-0933bb06-2b36-4af5-9943-86e433a4b466.png)
 
+# Table Of Content
+- [Phase-Locked-Loop-PLL-IC-design-on-Open-Source-Google-Skywater-130nm](#phase-locked-loop-pll-ic-design-on-open-source-google-skywater-130nm)
+- [DAY-1](#day-1)
+  * [Introduction to PLL](#introduction-to-pll)
+    + [PLL Components](#pll-components)
+    + [Introduction to phase frequency detector (PFD)](#introduction-to-phase-frequency-detector--pfd-)
+    + [Introduction to Charge Pump](#introduction-to-charge-pump)
+    + [Introduction to VCO and frequency divider](#introduction-to-vco-and-frequency-divider)
+    + [Tool setup and Design flow](#tool-setup-and-design-flow)
+- [DAY 2](#day-2)
+  * [PLL Components circuit design](#pll-components-circuit-design)
+  * [PLL components circuit simulations](#pll-components-circuit-simulations)
+    + [Steps to combine PLL sub-circuits and PLL full design simulation](#steps-to-combine-pll-sub-circuits-and-pll-full-design-simulation)
+    + [Troubleshooting steps](#troubleshooting-steps)
+    + [Layout Design](#layout-design)
+    + [Layout walkthrough](#layout-walkthrough)
+    + [Parasitics Extraction](#parasitics-extraction)
+    + [Post Layout simulation](#post-layout-simulation)
+    + [Steps to combine layouts](#steps-to-combine-layouts)
+    + [Tapeout](#tapeout)
+  * [Acknowledgement](#acknowledgement)
+
 # DAY-1
 ## Introduction to PLL
 - PLL stands for phase locked loop.
@@ -161,6 +183,7 @@ To start the simulation of the circuit just created
 ## Acknowledgement
 - Kunal Ghosh (Co-founder) (VSD Corp Pvt Ltd)
 - Lakshmi Sathi (Instructor)
+- https://github.com/lakshmi-sathi/avsdpll_1v8
 
 
 
