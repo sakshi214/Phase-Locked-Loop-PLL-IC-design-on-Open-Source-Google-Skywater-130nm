@@ -51,7 +51,7 @@ Development flow steps:
 # DAY 2
 ## PLL Components circuit design
 To make circuit description in ngspice:
-- first git clone the repository
+- Clone the repository
 ![image](https://user-images.githubusercontent.com/69634738/127761238-60b60e01-c691-45be-a74a-e31f282585af.png)
 - A spice file is the one with .spice or .cir extension
 - The frequency divider circuit file is shown below
