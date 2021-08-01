@@ -147,10 +147,25 @@ To start the simulation of the circuit just created
 
 
 ### Post Layout simulations
+
+![image](https://user-images.githubusercontent.com/69634738/127779791-d56e1fbe-d98f-41cf-9cb1-f3aca4176129.png)
+
+
+
+
+### Steps to combine layouts
+
+![image](https://user-images.githubusercontent.com/69634738/127780349-290525db-8652-4418-801c-ffbe058626f5.png)
+
+
+### Tapeout
+- It means to send our final designs to FAB.
+- The design needs some kind of interface to the external world.
+- caravel provides the soc (it carries the design)
+- it carries the design which is then fabricated and carried to outside world.
+
+## Acknowledgement
 - 
-
-
-
 
 
 
