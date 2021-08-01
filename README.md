@@ -146,15 +146,13 @@ To start the simulation of the circuit just created
 ![image](https://user-images.githubusercontent.com/69634738/127774981-9c42ed3d-5507-429c-bb37-f3afdf7bf12d.png)
 
 
-### Post Layout simulations
-
+### Post Layout simulation
+- sky130 and PFD spice file is included
+![image](https://user-images.githubusercontent.com/69634738/127781018-72d79ac4-a416-445a-9a3b-261162a6f9fc.png)
 ![image](https://user-images.githubusercontent.com/69634738/127779791-d56e1fbe-d98f-41cf-9cb1-f3aca4176129.png)
 
-
-
-
 ### Steps to combine layouts
-
+- they are combined using "place instance" option of magic.
 ![image](https://user-images.githubusercontent.com/69634738/127780349-290525db-8652-4418-801c-ffbe058626f5.png)
 
 
