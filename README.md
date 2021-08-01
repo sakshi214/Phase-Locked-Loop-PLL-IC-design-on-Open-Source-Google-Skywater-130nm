@@ -102,8 +102,12 @@ To start the simulation of the circuit just created
 - This is the pre-layout file combining all the circuits
 ![image](https://user-images.githubusercontent.com/69634738/127767883-59f37567-22ba-4914-89f1-4c6f4464d7b6.png)
 ![image](https://user-images.githubusercontent.com/69634738/127767903-f7841d03-cc67-4615-a034-2121ae79591e.png)
+- It is specifying
 ![image](https://user-images.githubusercontent.com/69634738/127767919-d4e600e8-91b3-430f-97a4-b480b648f557.png)
 ![image](https://user-images.githubusercontent.com/69634738/127767943-83438919-4782-47e8-9ee6-d91557badc8f.png)
+- the final simulation output is as shown
+![image](https://user-images.githubusercontent.com/69634738/127770865-cdb03a7e-b014-4bc7-a53b-92ed239b435a.png)
+
 
 
 
