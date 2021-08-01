@@ -3,24 +3,27 @@
 
 # Table Of Content
 - [Phase-Locked-Loop-PLL-IC-design-on-Open-Source-Google-Skywater-130nm](#phase-locked-loop-pll-ic-design-on-open-source-google-skywater-130nm)
+- [Table Of Content](#table-of-content)
 - [DAY-1](#day-1)
   * [Introduction to PLL](#introduction-to-pll)
-    + [PLL Components](#pll-components)
-    + [Introduction to phase frequency detector (PFD)](#introduction-to-phase-frequency-detector--pfd-)
-    + [Introduction to Charge Pump](#introduction-to-charge-pump)
-    + [Introduction to VCO and frequency divider](#introduction-to-vco-and-frequency-divider)
-    + [Tool setup and Design flow](#tool-setup-and-design-flow)
+  * [PLL Components](#pll-components)
+  * [Introduction to phase frequency detector (PFD)](#introduction-to-phase-frequency-detector--pfd-)
+  * [Introduction to Charge Pump](#introduction-to-charge-pump)
+  * [Introduction to VCO and frequency divider](#introduction-to-vco-and-frequency-divider)
+  * [Tool setup and Design flow](#tool-setup-and-design-flow)
+  * [Circuit design simulation tool- Ngspice](#circuit-design-simulation-tool--ngspice)
+  * [Layout design tool- Magic setup](#layout-design-tool--magic-setup)
 - [DAY 2](#day-2)
   * [PLL Components circuit design](#pll-components-circuit-design)
   * [PLL components circuit simulations](#pll-components-circuit-simulations)
-    + [Steps to combine PLL sub-circuits and PLL full design simulation](#steps-to-combine-pll-sub-circuits-and-pll-full-design-simulation)
-    + [Troubleshooting steps](#troubleshooting-steps)
-    + [Layout Design](#layout-design)
-    + [Layout walkthrough](#layout-walkthrough)
-    + [Parasitics Extraction](#parasitics-extraction)
-    + [Post Layout simulation](#post-layout-simulation)
-    + [Steps to combine layouts](#steps-to-combine-layouts)
-    + [Tapeout](#tapeout)
+  * [Steps to combine PLL sub-circuits and PLL full design simulation](#steps-to-combine-pll-sub-circuits-and-pll-full-design-simulation)
+  * [Troubleshooting steps](#troubleshooting-steps)
+  * [Layout Design](#layout-design)
+  * [Layout walkthrough](#layout-walkthrough)
+  * [Parasitics Extraction](#parasitics-extraction)
+  * [Post Layout simulation](#post-layout-simulation)
+  * [Steps to combine layouts](#steps-to-combine-layouts)
+  * [Tapeout](#tapeout)
   * [Acknowledgement](#acknowledgement)
 
 # DAY-1
@@ -29,14 +32,14 @@
 - It is a control system that tracks the output frequency and synchronises it with the reference signal.
 - It is used to get a precise clock signal without frequency or phase noise.
 
-### PLL Components
+## PLL Components
 - Phase frequency detector
 - charge pump -> it converts the digital comparision into anolog signal.
 - Low pass filter -> it is used to smoothen the charge pump output signal.
 - voltage controlled oscillator-> it is the onchip oscillator.
 - frequency divider ->it is used to convert the whole system into frequency multiplier.
 
-### Introduction to phase frequency detector (PFD)
+## Introduction to phase frequency detector (PFD)
 - It is used to compare output signal with reference signal.
 - The width of the pulse is used to determine the phase of the signal.
 - As width increases, phase also increases.
@@ -44,21 +47,21 @@
 - Deadzone-> it is the zone within which the PFD is insensitive to phase difference. it is mainly when signals fall close to each other hence the output doesn't get enough time to rise. this introduces a dealay.
 - A more precise PFD enables better stability for the PLL.
 
-### Introduction to Charge Pump
+## Introduction to Charge Pump
 - It converts the digital comparision from PFD into anolog signal.
 - On incresing the voltage, the speed of the oscillator increases.
 - The main issue of charge pump is charge leakage.
 - charge leakage-> it keeps charging the capacitor even when inputs are off.
 - This is tackled by using low pass filter in the output, which also helps inj stabilizing the PLL.
 
-### Introduction to VCO and frequency divider
+## Introduction to VCO and frequency divider
 - VCO is the onchip oscillator.
 - The frequency depends on delay and delay depends on current supplied.
 - Frequency divider is used to convert the whole system into frequency multiplier.
 Lock Range ->the range of frequencies for which PLL can maintain lock, already in locked state.
 Capture range -> The frequencies for which PLL is able to lock-in from unlocked state.
 
-### Tool setup and Design flow
+## Tool setup and Design flow
 Two tools are used:
 - Ngspice: it is used for the transistor level circuit simulations.
 - Magic: it is used for the layout design.
@@ -69,6 +72,13 @@ Development flow steps:
 - Layout development
 - Parasitics extraction
 - Post layout simulation
+
+## Circuit design simulation tool- Ngspice
+- it is an open source tool used for design simulations
+- it is used for the transistor level circuit simulations.
+## Layout design tool- Magic setup
+- it is an open source tool used for layout design.
+- it is used for the layout design.
 
 # DAY 2
 ## PLL Components circuit design
@@ -118,7 +128,7 @@ To start the simulation of the circuit just created
 - the circuit is able to detect the slight change in the phase.
 ![image](https://user-images.githubusercontent.com/69634738/127765965-7bead0ec-d71b-427f-81d4-87a972619b3d.png)
 
-### Steps to combine PLL sub-circuits and PLL full design simulation
+## Steps to combine PLL sub-circuits and PLL full design simulation
 - This is the pre-layout file combining all the circuits
 ![image](https://user-images.githubusercontent.com/69634738/127767883-59f37567-22ba-4914-89f1-4c6f4464d7b6.png)
 ![image](https://user-images.githubusercontent.com/69634738/127767903-f7841d03-cc67-4615-a034-2121ae79591e.png)
@@ -128,18 +138,18 @@ To start the simulation of the circuit just created
 - the final simulation output is as shown
 ![image](https://user-images.githubusercontent.com/69634738/127770865-cdb03a7e-b014-4bc7-a53b-92ed239b435a.png)
 
-### Troubleshooting steps
+## Troubleshooting steps
 - when the output doesnot show or it crashes, it is necessary to look if the connections are made properly.
 ![image](https://user-images.githubusercontent.com/69634738/127771268-61e446bf-b6a9-4b19-84d8-a97476ad7951.png)
 
-### Layout Design
+## Layout Design
 - The command "magic -T sky130A.tech" is used to open the magic window.
 - On the right hand side there is tray of materials present.
 - green section represents nmos.
 
 ![image](https://user-images.githubusercontent.com/69634738/127771476-26c13391-41e1-412a-964e-be3ce29305db.png)
 
-### Layout walkthrough
+## Layout walkthrough
 - The following is the frequency divider layout circuit
 - The components are kept close together to fit in minimum area, hence layout looks complicated.
 ![image](https://user-images.githubusercontent.com/69634738/127772509-7b2ff90b-5ea2-4179-8923-ff01dcfd09ac.png)
@@ -153,7 +163,7 @@ To start the simulation of the circuit just created
 - The below is the vco layout:
 ![image](https://user-images.githubusercontent.com/69634738/127773616-b958369d-415b-4e6d-9e02-acc23ad75db1.png)
 
-### Parasitics Extraction
+## Parasitics Extraction
 - To extract the capacitance effect information parasitics extraction.
 ![image](https://user-images.githubusercontent.com/69634738/127773909-7310cf74-bf65-40cb-b124-a87d1742e208.png)
 - press i button to select the whole design and then after giving command extract all
@@ -165,16 +175,16 @@ To start the simulation of the circuit just created
 - in the bottom there are additional capacitances, these are the capacitances extracted by magic.
 ![image](https://user-images.githubusercontent.com/69634738/127774981-9c42ed3d-5507-429c-bb37-f3afdf7bf12d.png)
 
-### Post Layout simulation
+## Post Layout simulation
 - sky130 and PFD spice file is included
 ![image](https://user-images.githubusercontent.com/69634738/127781018-72d79ac4-a416-445a-9a3b-261162a6f9fc.png)
 ![image](https://user-images.githubusercontent.com/69634738/127779791-d56e1fbe-d98f-41cf-9cb1-f3aca4176129.png)
 
-### Steps to combine layouts
+## Steps to combine layouts
 - they are combined using "place instance" option of magic.
 ![image](https://user-images.githubusercontent.com/69634738/127780349-290525db-8652-4418-801c-ffbe058626f5.png)
 
-### Tapeout
+## Tapeout
 - It means to send our final designs to FAB.
 - The design needs some kind of interface to the external world.
 - caravel provides the soc (it carries the design)
