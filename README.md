@@ -83,7 +83,22 @@ To start the simulation of the circuit just created
 - the slope represents the charging happening
 ![image](https://user-images.githubusercontent.com/69634738/127763770-10483a9c-c32c-49c2-af0a-6f15ebb8ffc8.png)
 
-- the response when actual pulse signal give is 
+- the response when actual pulse signal given to v2 is 
+![image](https://user-images.githubusercontent.com/69634738/127765476-f8d851c9-5742-433f-aafa-c338e84b02f3.png)
+![image](https://user-images.githubusercontent.com/69634738/127765489-29089879-640a-4bea-9990-9a60e1fc878f.png)
+
+- This is the VCO.cir file and its simulation
+- the oscillations are full swing 
+![image](https://user-images.githubusercontent.com/69634738/127765786-697ead65-ec91-446a-ab6b-de5798fd25e8.png)
+![image](https://user-images.githubusercontent.com/69634738/127765811-4a27acdd-3021-4fb9-849b-cfc5670da748.png)
+
+- This is the phase frequency detector PD.cir and its simulation
+![image](https://user-images.githubusercontent.com/69634738/127765902-a68bf773-ae9e-4cef-9594-b6beb4efda3f.png)
+![image](https://user-images.githubusercontent.com/69634738/127765923-937be01a-0052-487c-aa81-c0af672afbaf.png)
+- the circuit is able to detect the slight change in the phase.
+![image](https://user-images.githubusercontent.com/69634738/127765965-7bead0ec-d71b-427f-81d4-87a972619b3d.png)
+
+
 
 
 
