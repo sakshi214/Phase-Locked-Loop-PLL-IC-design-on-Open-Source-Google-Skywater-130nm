@@ -108,6 +108,17 @@ To start the simulation of the circuit just created
 - the final simulation output is as shown
 ![image](https://user-images.githubusercontent.com/69634738/127770865-cdb03a7e-b014-4bc7-a53b-92ed239b435a.png)
 
+### Troubleshooting steps
+- when the output doesnot show or it crashes, it is necessary to look if the connections are made properly.
+![image](https://user-images.githubusercontent.com/69634738/127771268-61e446bf-b6a9-4b19-84d8-a97476ad7951.png)
+
+### Layout Design
+- The command "magic -T sky130A.tech" is used to open the magic window.
+- On the right hand side there is tray of materials present.
+
+![image](https://user-images.githubusercontent.com/69634738/127771476-26c13391-41e1-412a-964e-be3ce29305db.png)
+
+
 
 
 
