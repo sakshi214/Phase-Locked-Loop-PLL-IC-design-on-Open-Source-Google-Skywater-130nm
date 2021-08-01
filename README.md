@@ -52,8 +52,25 @@ Development flow steps:
 # DAY 2
 ## PLL Components circuit design
 To make circuit description in ngspice:
-first git clone the repository
+- first git clone the repository
 ![image](https://user-images.githubusercontent.com/69634738/127761238-60b60e01-c691-45be-a74a-e31f282585af.png)
-![image](https://user-images.githubusercontent.com/69634738/127761237-68ce4caf-a607-4ce5-9c72-a48ea6fe73d4.png)
+- A spice file is the one with .spice or .clr extension
+- The frequency divider circuit file is shown below
+- this is the circuit diagram
+![image](https://user-images.githubusercontent.com/69634738/127761397-3e5667d2-32b5-4ead-8a0c-88bde7d56a99.png)
+
+-the sky130 library is included with 'include' command.
+- xm1 is the pmos and the numbers 3 2 1 1 represents drain gate source body respectively.
+- pmos length is 150 and width is 720 taken
+- pmos width is taken double for the transistor sizing purpose.
+- xm3 & xm4 are the transmission gates.
+![image](https://user-images.githubusercontent.com/69634738/127761508-855ab22b-791e-46cb-a882-fd89c0986d33.png)
+
+- v1 voltage source is connected to provide the 1.8V.
+- v2 is the pulse source i.e, the clock signal.
+- .control block is used to keep the simulation instructions.
+![image](https://user-images.githubusercontent.com/69634738/127761459-9333ea10-7d04-4d6c-a9bb-b8e6a63ed5ac.png)
+
+
 
 
