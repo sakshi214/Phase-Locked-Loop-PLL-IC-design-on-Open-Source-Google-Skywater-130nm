@@ -65,7 +65,6 @@ To make circuit description in ngspice:
 - pmos width is taken double for the transistor sizing purpose.
 - xm3 & xm4 are the transmission gates.
 ![image](https://user-images.githubusercontent.com/69634738/127761508-855ab22b-791e-46cb-a882-fd89c0986d33.png)
-
 - v1 voltage source is connected to provide the 1.8V.
 - v2 is the pulse source i.e, the clock signal.
 - .control block is used to keep the simulation instructions.
