@@ -98,6 +98,14 @@ To start the simulation of the circuit just created
 - the circuit is able to detect the slight change in the phase.
 ![image](https://user-images.githubusercontent.com/69634738/127765965-7bead0ec-d71b-427f-81d4-87a972619b3d.png)
 
+### Steps to combine PLL sub-circuits and PLL full design simulation
+- This is the pre-layout file combining all the circuits
+![image](https://user-images.githubusercontent.com/69634738/127767883-59f37567-22ba-4914-89f1-4c6f4464d7b6.png)
+![image](https://user-images.githubusercontent.com/69634738/127767903-f7841d03-cc67-4615-a034-2121ae79591e.png)
+![image](https://user-images.githubusercontent.com/69634738/127767919-d4e600e8-91b3-430f-97a4-b480b648f557.png)
+![image](https://user-images.githubusercontent.com/69634738/127767943-83438919-4782-47e8-9ee6-d91557badc8f.png)
+
+
 
 
 
