@@ -46,3 +46,14 @@ Development flow steps:
 - Layout development
 - Parasitics extraction
 - Post layout simulation
+
+
+
+# DAY 2
+## PLL Components circuit design
+To make circuit description in ngspice:
+first git clone the repository
+![image](https://user-images.githubusercontent.com/69634738/127761238-60b60e01-c691-45be-a74a-e31f282585af.png)
+![image](https://user-images.githubusercontent.com/69634738/127761237-68ce4caf-a607-4ce5-9c72-a48ea6fe73d4.png)
+
+
