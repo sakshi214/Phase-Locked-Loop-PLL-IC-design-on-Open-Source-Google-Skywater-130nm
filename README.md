@@ -53,10 +53,10 @@
 
 ## Introduction to Charge Pump
 - It converts the digital comparision from PFD into anolog signal.
-- On incresing the voltage, the speed of the oscillator increases.
+- On increasing the voltage, the speed of the oscillator increases.
 - The main issue of charge pump is charge leakage.
 - charge leakage-> it keeps charging the capacitor even when inputs are off.
-- This is tackled by using low pass filter in the output, which also helps inj stabilizing the PLL.
+- This is tackled by using low pass filter in the output, which also helps in stabilizing the PLL.
 
 ## Introduction to VCO and frequency divider
 - VCO is the onchip oscillator.
@@ -81,7 +81,7 @@ Development flow steps:
 - it is an open source tool used for design simulations
 - it is used for the transistor level circuit simulations.
 ## Layout design tool- Magic setup
-- it is an open source tool used for layout design.
+- it is an open source tool.
 - it is used for the layout design.
 
 # DAY 2
