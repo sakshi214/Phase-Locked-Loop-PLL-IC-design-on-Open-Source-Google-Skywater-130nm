@@ -31,6 +31,8 @@
 - PLL stands for phase locked loop.
 - It is a control system that tracks the output frequency and synchronises it with the reference signal.
 - It is used to get a precise clock signal without frequency or phase noise.
+![image](https://user-images.githubusercontent.com/69634738/127871669-f90a386a-a8c4-44d6-9211-434827e34deb.png)
+
 
 ## PLL Components
 - Phase frequency detector
@@ -38,6 +40,8 @@
 - Low pass filter -> it is used to smoothen the charge pump output signal.
 - voltage controlled oscillator-> it is the onchip oscillator.
 - frequency divider ->it is used to convert the whole system into frequency multiplier.
+![image](https://user-images.githubusercontent.com/69634738/127873279-96c08194-df3c-4a33-90a6-00e668fab1a1.png)
+
 
 ## Introduction to phase frequency detector (PFD)
 - It is used to compare output signal with reference signal.
